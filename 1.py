@@ -1,6 +1,8 @@
 # TWO SUM
 
 # Solution 1: Brute force, O(n^2), space O(1)
+
+
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -35,13 +37,14 @@ class Solution(object):
 # Solution 3: hashmap, O(n), space O(n)
 class Solution(object):
     def twoSum(self, nums, target):
-        nums_dict  = {}
+        nums_dict = {}
         for index in range(len(nums)):
             if target - nums[index] in nums_dict:
                 return [nums_dict[target - nums[index]], index]
             else:
                 nums_dict[nums[index]] = index
 
+
 if __name__ == '__main__':
     my_class = Solution()
-    print(my_class.twoSum([4,2,1], 5))
+    print(my_class.twoSum([4, 2, 1], 5))

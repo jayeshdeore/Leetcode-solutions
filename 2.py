@@ -1,12 +1,15 @@
 # Add Two numbers
 
 # Definition for singly-linked list.
+
+
 class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
 
-# This will be roughly of O(m+n) where m and n are number of elements in the given linked lists
+# This will be roughly of O(m+n) where m and n are number of elements in
+# the given linked lists
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
         """
@@ -43,7 +46,8 @@ class Solution(object):
             if l2 is not None:
                 l2 = l2.next
 
-        # In case there is carry in the last digit and there are no digits in the end e.g. 5,5  ans should be 0,1 now just 0
+        # In case there is carry in the last digit and there are no digits in
+        # the end e.g. 5,5  ans should be 0,1 now just 0
         if carry == 1:
             current.next = ListNode(1)
         return answer.next
