@@ -27,7 +27,6 @@ class Solution(object):
 
 # Another beautiful implementation of the reverse without using any extra space, but since in python
 # the length of an integer is not limited we need to have a separate case to take case of overflow.
-
 class Solution(object):
     def reverse(self, x):
         rev = 0
@@ -36,7 +35,6 @@ class Solution(object):
             x = x // 10
 
         return rev
-
 
 
 if __name__=='__main__':
