@@ -37,7 +37,7 @@ class Solution(object):
         return rev
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     my_class = Solution()
     print(my_class.reverse(1234))
 
